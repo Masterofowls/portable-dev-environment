@@ -1,0 +1,58 @@
+# Starship Configuration for Portable Environment
+# A clean, informative prompt
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$cmd_duration\
+$line_break\
+$character"""
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+
+[directory]
+style = "bold cyan"
+format = "[$path]($style) "
+truncation_length = 3
+truncation_symbol = ".../"
+home_symbol = "~"
+
+[git_branch]
+symbol = ""
+style = "bold purple"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold red"
+format = '([$all_status$ahead_behind]($style) )'
+ahead = "up${count}"
+behind = "down${count}"
+modified = "!${count}"
+staged = "+${count}"
+untracked = "?${count}"
+
+[nodejs]
+symbol = "node "
+style = "bold green"
+format = "[$symbol($version)]($style) "
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+
+[python]
+symbol = "py "
+style = "bold yellow"
+format = '[${symbol}${pyenv_prefix}(${version})]($style) '
+detect_files = ["requirements.txt", "pyproject.toml", "setup.py", ".python-version"]
+
+[cmd_duration]
+min_time = 2000
+format = "[$duration]($style) "
+style = "bold yellow"
+
+[line_break]
+disabled = false

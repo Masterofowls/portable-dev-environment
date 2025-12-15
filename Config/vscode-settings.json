@@ -1,0 +1,102 @@
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.suggestSelection": "first",
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": false,
+        "**/__pycache__": true,
+        "**/*.pyc": true
+    },
+    
+    "window.titleBarStyle": "custom",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}PORTABLE",
+    
+    "workbench.startupEditor": "none",
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    
+    "terminal.integrated.defaultProfile.windows": "Portable PowerShell",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', Consolas",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.profiles.windows": {
+        "Portable PowerShell": {
+            "path": "${env:PORTABLE_POWERSHELL}\\pwsh.exe",
+            "args": ["-NoLogo", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${env:PORTABLE_ROOT}\\Config\\PortableProfile.ps1"],
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.env.windows": {
+        "PORTABLE_ROOT": "${env:PORTABLE_ROOT}",
+        "HOME": "${env:PORTABLE_HOME}",
+        "TEMP": "${env:PORTABLE_TEMP}",
+        "TMP": "${env:PORTABLE_TEMP}"
+    },
+    
+    "git.path": "${env:PORTABLE_GIT}\\cmd\\git.exe",
+    "git.autofetch": false,
+    "git.enableSmartCommit": true,
+    
+    "python.defaultInterpreterPath": "${env:PORTABLE_PYTHON}\\python.exe",
+    "python.terminal.activateEnvironment": false,
+    "python.analysis.autoSearchPaths": false,
+    "python.analysis.indexing": false,
+    
+    "npm.packageManager": "npm",
+    
+    "telemetry.telemetryLevel": "off",
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/__pycache__": true
+    },
+    "search.useIgnoreFiles": true,
+    "search.followSymlinks": false,
+    
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.hg/store/**": true,
+        "**/dist/**": true,
+        "**/build/**": true
+    },
+    
+    "remote.autoForwardPorts": false,
+    "security.workspace.trust.enabled": true,
+    "security.workspace.trust.untrustedFiles": "prompt",
+    
+    "http.proxyStrictSSL": true,
+    
+    "liveServer.settings.CustomBrowser": "firefox",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "${env:PORTABLE_FIREFOX}\\firefox.exe",
+    
+    "browser-preview.chromeExecutable": "${env:PORTABLE_FIREFOX}\\firefox.exe",
+    
+    "open-in-browser.default": "firefox"
+}

@@ -1,0 +1,28 @@
+[user]
+    name = masterofowls
+    email = mrdaniilsht@gmail.com
+
+[core]
+    autocrlf = true
+    safecrlf = warn
+    editor = code --wait
+    excludesfile = ~/.gitignore_global
+
+[init]
+    defaultBranch = main
+
+[color]
+    ui = auto
+
+[pull]
+    rebase = false
+
+[push]
+    default = current
+    autoSetupRemote = true
+
+[credential]
+    helper = store
+
+[http]
+    sslVerify = true
