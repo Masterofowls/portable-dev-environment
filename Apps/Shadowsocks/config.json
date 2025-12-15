@@ -1,0 +1,10 @@
+{
+    "server": "95.81.64.205",
+    "server_port": 8443,
+    "password": "tc6vPspBcNC3Lb3zrSelTi",
+    "method": "chacha20-ietf-poly1305",
+    "local_address": "127.0.0.1",
+    "local_port": 1080,
+    "timeout": 300,
+    "fast_open": false
+}
